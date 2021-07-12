@@ -64,22 +64,6 @@ a:focus {
     font-size: 10px;
 }
 
-#contact-us .fi-rr-comment:hover {
-    color: #ddd;
-}
-
-#login-user .fi-rr-user:hover {
-    color: #ddd;
-}
-
-#shopping-cart .fi-rr-shopping-cart:hover {
-    color: #ddd;
-}
-
-#favorite .fi-rr-heart:hover {
-    color: #ddd;
-}
-
 .nav-logo {
     background-image: url("../img/large/01.jpg");
 }
@@ -122,6 +106,14 @@ a:focus {
     -o-transition: 0.1s all ease-in-out;
 }
 
+#header_cart {
+    border-radius: 250px;
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+    -ms-border-radius: 250px;
+    -o-border-radius: 250px;
+}
+
 #bottom-header {
     display: inherit;
     list-style: none;
@@ -137,7 +129,13 @@ a:focus {
 #my-search {
     margin: 5% auto;
     width: 70%;
-    margin-left: 20%;
+    /* margin-left: 20%; */
+}
+
+@media (max-width: 992px) {
+    #my-search {
+        width: 100%;
+    }
 }
 
 #my-search .my-search {
@@ -1313,7 +1311,8 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .footer-top-item-header:hover {
     color: #0071b8;
-    text-shadow: 0px 5px 8px #0071b8;
+    font-weight: 600;
+    /* text-shadow: 0px 5px 8px #0071b8; */
 }
 
 #footer-top-item a:hover img {
@@ -1390,6 +1389,142 @@ body.dark .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .left .fa-whatsapp:hover {
     color: rgb(62, 142, 62);
 }
+
+
+/* badge style */
+
+*,
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+figure {
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* ================== Badge Products CSS ========================*/
+
+.products {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.products ul {
+    margin: 0px;
+    text-align: center;
+}
+
+.products ul li {
+    width: 320px;
+    height: 213px;
+    background: #f8f8f8;
+    display: inline-block;
+    position: relative;
+    margin: 15px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* ================== Badge Overlay CSS ========================*/
+
+.badge-overlay {
+    position: absolute;
+    left: 0%;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 100;
+    -webkit-transition: width 1s ease, height 1s ease;
+    -moz-transition: width 1s ease, height 1s ease;
+    -o-transition: width 1s ease, height 1s ease;
+    transition: width 0.4s ease, height 0.4s ease
+}
+
+
+/* ================== Badge CSS ========================*/
+
+.badge {
+    margin: 0;
+    padding: 0;
+    color: white;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-family: 'shabnam-400', Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: normal;
+    text-transform: uppercase;
+    background: #ed1b24;
+}
+
+.badge::before,
+.badge::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    margin: 0 -1px;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    min-width: 55px
+}
+
+.badge::before {
+    right: 100%
+}
+
+.badge::after {
+    left: 100%
+}
+
+
+/* ================== Badge Position CSS ========================*/
+
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -ms-transform: translateX(-30%) translateY(0%) rotate(-45deg);
+    -webkit-transform: translateX(-30%) translateY(0%) rotate(-45deg);
+    transform: translateX(-30%) translateY(0%) rotate(-45deg);
+    -ms-transform-origin: top right;
+    -webkit-transform-origin: top right;
+    transform-origin: top right;
+    -moz-transform: translateX(-30%) translateY(0%) rotate(-45deg);
+    -o-transform: translateX(-30%) translateY(0%) rotate(-45deg);
+}
+
+.badge.red {
+    background: #ed1b24;
+}
+
+.badge.orange {
+    background: #fa7901;
+}
+
+.badge.pink {
+    background: #ee2b8b;
+}
+
+.badge.blue {
+    background: #00adee;
+}
+
+.badge.green {
+    background: #b4bd00;
+}
+
+
+/* badge style */
 
 
 /* footer logo styles */
@@ -1839,8 +1974,8 @@ textarea {
     vertical-align: middle;
     z-index: 1000000;
     cursor: pointer;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     background-color: #0071b8;
     text-indent: 5px;
     -webkit-border-radius: 60px;

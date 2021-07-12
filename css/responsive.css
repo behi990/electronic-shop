@@ -148,10 +148,10 @@
     #header-shopping-cart-and-user-login {
         display: none;
     }
-    #my-shopping-cart,
+    /* #my-shopping-cart,
     #my-user-login {
         display: none;
-    }
+    } */
 }
 
 @media screen and (max-width: 1199px) {

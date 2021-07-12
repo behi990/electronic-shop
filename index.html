@@ -27,55 +27,7 @@
 
 <body class="hero-anime">
     <header>
-        <nav class="navbar-top ">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <ul id="top-header">
-                        <li>
-                            <a href="#" id="contact-us" data-toggle="modal" data-target="#myModal">تماس با ما/پیگیری
-                                سفارش
-                                <i class="fi fi-rr-comment fa-2x"></i>
-                            </a>
-                            <!-- Modal -->
-                            <div id="myModal" class="modal fade pull-right text-right" tabindex="-1" role="dialog">
-                                <div class="modal-dialog">
-                                    <!-- Modal content-->
-                                    <div class="modal-content">
-                                        <div class="modal-body">
-                                            <h4>آدرس</h4>
-                                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از </p>
-                                            <h4>تلفن تماس</h4>
-                                            <p>09149736292 - 09388199203</p>
-                                            <h4>ایمیل</h4>
-                                            <p>sheikhibehrang@gmail.com</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary" data-dismiss="modal">بستن</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li id="login-user">
-                            <a href="#">حساب کاربری
-                                <i class="fi fi-rr-user fa-2x"></i>
-                            </a>
-                        </li>
-                        <li id="shopping-cart">
-                            <a href="#">سبد خرید
-                                <!-- <span class="badge-count">0</span> -->
-                                <i class="fi fi-rr-shopping-cart fa-2x" style="vertical-align: middle;"></i>
-                            </a>
-                        </li>
-                        <li id="favorite">
-                            <a href="#">علاقه مندی ها
-                                <i class="fi fi-rr-heart fa-2x"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+
         <!-- bottom header  -->
         <section class="nav-logo">
             <div class="container-fluid">
@@ -102,13 +54,13 @@
             </div>
         </section>
         <section class="navigation-wrap bg-light start-header start-style ">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-12">
-                        <!-- navbar expand -->
-                        <nav class="navbar navbar-expand-md navbar-light ">
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-supported-content" aria-controls="navbar-supported-content" aria-expanded="false" aria-label="toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                        <nav class="navbar navbar-expand-md navbar-light float-right">
+                            <button class="navbar-toggler" type="button" style="margin-top: 4vh;" data-toggle="collapse" data-target="#navbar-supported-content" aria-controls="navbar-supported-content" aria-expanded="false" aria-label="toggle navigation">
+                                <span class="fi fi-rr-menu-burger fa-2x" ></span>
+                                <span style="font-size: 4vh;"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbar-supported-content">
                                 <ul class="navbar-nav ml-auto py-4 py-md-0">
@@ -199,7 +151,7 @@
                                         </div>
                                     </li>
 
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                    <!-- <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                                         <a href="#" class="nav-link dropdown-toggle float-right" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ابزارآلات و تجهیزات
                                             <i class="fi fi-rr-angle-down fa-sm"></i>
                                         </a>
@@ -213,22 +165,24 @@
                                             <a href="#" class="dropdown-item">زیر دسته چهارم
                                             </a>
                                         </div>
-                                    </li>
-
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4" id="my-user-login">
-                                        <a href="#" class="nav-link dropdown-toggle float-right">حساب کاربری
-                                            <i class="fi fi-rr-user"></i>
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4" id="my-shopping-cart">
-                                        <a href="#" class="nav-link dropdown-toggle float-right">سبد خرید
-                                            <i class="fi fi-rr-shopping-cart"></i>
-                                        </a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                         </nav>
+                        <!-- header buttons -->
+                        <ul class="navbar-nav ml-auto py-4 py-md-0 float-left" style="display: flex;flex-direction: row;">
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <button style="border-radius: 50%;" type="button" class="btn btn-outline-success rounded" id="header_cart" title="سبد خرید">
+                                    <i class="fi fi-rr-shopping-cart"></i>
+                                </button>
+                            </li>
+                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                <button type="button" class="btn btn-outline-info rounded" id="header_user" title="حساب کاربری">
+                                    <i class="fi fi-rr-user"></i>
+                                </button>
+                            </li>
+                        </ul>
+                        <!-- header buttons -->
                     </div>
                 </div>
             </div>
@@ -249,41 +203,45 @@
                             </li>
                             <hr>
                             <li>
-                                <i class="fi fi-rr-link" aria-hidden="true"></i>
+                                <i class="fi fi-rr-info" aria-hidden="true"></i>
                                 <a href="#">راهنمای خرید</a>
                             </li>
                             <hr>
                             <li>
-                                <i class="fi fi-rr-link" aria-hidden="true"></i>
+                                <i class="fi fi-rr-box" aria-hidden="true"></i>
                                 <a href="#">پیگیری سفارشات</a>
                             </li>
                             <hr>
                             <li>
-                                <i class="fi fi-rr-link" aria-hidden="true"></i>
+                                <i class="fi fi-rr-diamond" aria-hidden="true"></i>
                                 <a href="#">درباره‌ی ما</a>
                             </li>
                             <hr>
                             <li>
-                                <i class="fi fi-rr-link" aria-hidden="true"></i>
+                                <i class="fi fi-rr-credit-card" aria-hidden="true"></i>
                                 <a href="#">شماره حساب ها</a>
                             </li>
                             <hr>
                             <li>
-                                <i class="fi fi-rr-link" aria-hidden="true"></i>
+                                <i class="fi fi-rr-credit-card" aria-hidden="true"></i>
                                 <a href="#">ثبت اطلاعات پرداختی</a>
                             </li>
                             <hr>
                             <li>
-                                <i class="fi fi-rr-link" aria-hidden="true"></i>
+                                <i class="fi fi-rr-eye" aria-hidden="true"></i>
                                 <a href="#">شرايط و قوانین فروشگاه</a>
                             </li>
                             <hr>
                             <li>
-                                <i class="fi fi-rr-link" aria-hidden="true"></i>
-                                <a href="#">شرايط و قوانین فروشگاه</a>
+                                <i class="fi fi-rr-bookmark" aria-hidden="true"></i>
+                                <a href="#">علاقمندی ها/ذخیره ها</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <i class="fi fi-rr-bookmark" aria-hidden="true"></i>
+                                <a href="#">علاقمندی ها/ذخیره ها</a>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </div>
@@ -336,10 +294,17 @@
                             <div class="block_content">
                                 <div class="owl-carousel carousel-main owl-drag owl-rtl owl-theme ">
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt=""></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div>
                                         <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -349,18 +314,21 @@
                                         <button class="btn btn-outline-danger btn-block" title="ذخیره در علاقمندی ها" type="button" style="max-width: 70%;margin: 1vh auto;">
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
-                                        </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
                                         </button>
 
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/11.jpg" class="img img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div>
                                         <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -371,16 +339,20 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/11.jpg" class="img img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div>
                                         <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -391,16 +363,20 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/13.jpg" class="img img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div>
                                         <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -411,16 +387,20 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/13.jpg" class="img img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div>
                                         <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -431,16 +411,20 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/13.jpg" class="img img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div>
                                         <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -451,16 +435,20 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/13.jpg" class="img img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div>
                                         <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -471,16 +459,20 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/13.jpg" class="img img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div>
                                         <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -491,16 +483,20 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/13.jpg" class="img  img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div>
                                         <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -511,16 +507,20 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/13.jpg" class="img  img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div>
                                         <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -531,16 +531,20 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/13.jpg" class="img  img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div>
                                         <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -551,16 +555,20 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/13.jpg" class="img  img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div>
                                         <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -571,10 +579,7 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                 </div>
                             </div>
@@ -589,10 +594,17 @@
                             <div class="block_content">
                                 <div class="owl-carousel carousel-main owl-drag owl-rtl owl-theme ">
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt=""></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div>
                                         <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -603,16 +615,20 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/11.jpg" class="img img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div>
                                         <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -623,16 +639,20 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/11.jpg" class="img img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div>
                                         <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -643,16 +663,20 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/13.jpg" class="img img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div>
                                         <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -663,16 +687,20 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/13.jpg" class="img img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div>
                                         <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -683,16 +711,20 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/13.jpg" class="img img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div>
                                         <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -703,16 +735,19 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/13.jpg" class="img img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div> <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -723,16 +758,19 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/13.jpg" class="img img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div> <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -743,16 +781,19 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/13.jpg" class="img  img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div> <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -763,16 +804,19 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/13.jpg" class="img  img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div> <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -783,16 +827,19 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/13.jpg" class="img  img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div> <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -803,16 +850,19 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                     <div id="product-container">
-                                        <a href="#"><img src="img/stuff/13.jpg" class="img  img-fluid" title="لورم ایپسوم متن ساختگی " alt=""></a>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <figure>
+                                            <a href="#">
+                                                <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="badge-overlay">
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                        </div> <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
                                         <div class="price-container">
-                                            <p class="price text-danger">1000ريال</p>
+                                            <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
                                         </div>
                                         <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -823,10 +873,7 @@
                                             <span class="buttoncontent">ذخیره</span>
                                             <i class="fi fi-rr-bookmark"></i>
                                         </button>
-                                        <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                            <span class="button-content">معرفی</span>
-                                            <i class="fa fa-question-circle"></i>
-                                        </button>
+
                                     </div>
                                 </div>
                             </div>
@@ -844,14 +891,19 @@
                                     <div class="row" id="product-container">
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                             <div class="card mb-4 box-shadow">
-                                                <a href="#">
-                                                    <img class="img card-img" src="img/stuff/10.jpg" alt="Card image cap" id="pro-img">
-                                                </a>
+                                                <figure>
+                                                    <a href="#">
+                                                        <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                                    </a>
+                                                </figure>
+                                                <div class="badge-overlay">
+                                                    <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                                </div>
                                                 <div class="card-body">
                                                     <p class="product-name">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
                                                     </p>
                                                     <div class="price-container">
-                                                        <p class="price text-danger">1000ريال</p>
+                                                        <p class="price text-muted">1000ريال</p>
                                                         <p class="price-off text-success">1000ريال</p>
                                                     </div>
                                                     <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -862,23 +914,25 @@
                                                         <span class="buttoncontent">ذخیره</span>
                                                         <i class="fi fi-rr-bookmark"></i>
                                                     </button>
-                                                    <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                                        <span class="button-content">معرفی</span>
-                                                        <i class="fa fa-question-circle"></i>
-                                                    </button>
+
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                             <div class="card mb-4 box-shadow">
-                                                <a href="#">
-                                                    <img class="img card-img" src="img/stuff/10.jpg" alt="Card image cap" id="pro-img">
-                                                </a>
+                                                <figure>
+                                                    <a href="#">
+                                                        <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                                    </a>
+                                                </figure>
+                                                <div class="badge-overlay">
+                                                    <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                                </div>
                                                 <div class="card-body">
                                                     <p class="product-name">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
                                                     </p>
                                                     <div class="price-container">
-                                                        <p class="price text-danger">1000ريال</p>
+                                                        <p class="price text-muted">1000ريال</p>
                                                         <p class="price-off text-success">1000ريال</p>
                                                     </div>
                                                     <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -889,23 +943,27 @@
                                                         <span class="buttoncontent">ذخیره</span>
                                                         <i class="fi fi-rr-bookmark"></i>
                                                     </button>
-                                                    <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                                        <span class="button-content">معرفی</span>
-                                                        <i class="fa fa-question-circle"></i>
-                                                    </button>
+
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                             <div class="card mb-4 box-shadow">
-                                                <a href="#">
-                                                    <img class="img card-img" src="img/stuff/10.jpg" alt="Card image cap" id="pro-img">
-                                                </a>
+                                                <!-- off products -->
+                                                <figure>
+                                                    <a href="#">
+                                                        <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                                    </a>
+                                                </figure>
+                                                <div class="badge-overlay">
+                                                    <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                                </div>
+                                                <!-- off products -->
                                                 <div class="card-body">
                                                     <p class="product-name">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
                                                     </p>
                                                     <div class="price-container">
-                                                        <p class="price text-danger">1000ريال</p>
+                                                        <p class="price text-muted">1000ريال</p>
                                                         <p class="price-off text-success">1000ريال</p>
                                                     </div>
                                                     <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -916,23 +974,27 @@
                                                         <span class="buttoncontent">ذخیره</span>
                                                         <i class="fi fi-rr-bookmark"></i>
                                                     </button>
-                                                    <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                                        <span class="button-content">معرفی</span>
-                                                        <i class="fa fa-question-circle"></i>
-                                                    </button>
+
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                             <div class="card mb-4 box-shadow">
-                                                <a href="#">
-                                                    <img class="img card-img" src="img/stuff/10.jpg" alt="Card image cap" id="pro-img">
-                                                </a>
+                                                <!-- off products -->
+                                                <figure>
+                                                    <a href="#">
+                                                        <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                                    </a>
+                                                </figure>
+                                                <div class="badge-overlay">
+                                                    <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                                </div>
+                                                <!-- off products -->
                                                 <div class="card-body">
                                                     <p class="product-name">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
                                                     </p>
                                                     <div class="price-container">
-                                                        <p class="price text-danger">1000ريال</p>
+                                                        <p class="price text-muted">1000ريال</p>
                                                         <p class="price-off text-success">1000ريال</p>
                                                     </div>
                                                     <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -943,23 +1005,27 @@
                                                         <span class="buttoncontent">ذخیره</span>
                                                         <i class="fi fi-rr-bookmark"></i>
                                                     </button>
-                                                    <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                                        <span class="button-content">معرفی</span>
-                                                        <i class="fa fa-question-circle"></i>
-                                                    </button>
+
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                             <div class="card mb-4 box-shadow">
-                                                <a href="#">
-                                                    <img class="img card-img" src="img/stuff/10.jpg" alt="Card image cap" id="pro-img">
-                                                </a>
+                                                <!-- off products -->
+                                                <figure>
+                                                    <a href="#">
+                                                        <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                                    </a>
+                                                </figure>
+                                                <div class="badge-overlay">
+                                                    <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                                </div>
+                                                <!-- off products -->
                                                 <div class="card-body">
                                                     <p class="product-name">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
                                                     </p>
                                                     <div class="price-container">
-                                                        <p class="price text-danger">1000ريال</p>
+                                                        <p class="price text-muted">1000ريال</p>
                                                         <p class="price-off text-success">1000ريال</p>
                                                     </div>
                                                     <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -970,23 +1036,27 @@
                                                         <span class="buttoncontent">ذخیره</span>
                                                         <i class="fi fi-rr-bookmark"></i>
                                                     </button>
-                                                    <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                                        <span class="button-content">معرفی</span>
-                                                        <i class="fa fa-question-circle"></i>
-                                                    </button>
+
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                             <div class="card mb-4 box-shadow">
-                                                <a href="#">
-                                                    <img class="img card-img" src="img/stuff/10.jpg" alt="Card image cap" id="pro-img">
-                                                </a>
+                                                <!-- off products -->
+                                                <figure>
+                                                    <a href="#">
+                                                        <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                                    </a>
+                                                </figure>
+                                                <div class="badge-overlay">
+                                                    <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                                </div>
+                                                <!-- off products -->
                                                 <div class="card-body">
                                                     <p class="product-name">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
                                                     </p>
                                                     <div class="price-container">
-                                                        <p class="price text-danger">1000ريال</p>
+                                                        <p class="price text-muted">1000ريال</p>
                                                         <p class="price-off text-success">1000ريال</p>
                                                     </div>
                                                     <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -997,23 +1067,27 @@
                                                         <span class="buttoncontent">ذخیره</span>
                                                         <i class="fi fi-rr-bookmark"></i>
                                                     </button>
-                                                    <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                                        <span class="button-content">معرفی</span>
-                                                        <i class="fa fa-question-circle"></i>
-                                                    </button>
+
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                             <div class="card mb-4 box-shadow">
-                                                <a href="#">
-                                                    <img class="img card-img" src="img/stuff/10.jpg" alt="Card image cap" id="pro-img">
-                                                </a>
+                                                <!-- off products -->
+                                                <figure>
+                                                    <a href="#">
+                                                        <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                                    </a>
+                                                </figure>
+                                                <div class="badge-overlay">
+                                                    <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                                </div>
+                                                <!-- off products -->
                                                 <div class="card-body">
                                                     <p class="product-name">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
                                                     </p>
                                                     <div class="price-container">
-                                                        <p class="price text-danger">1000ريال</p>
+                                                        <p class="price text-muted">1000ريال</p>
                                                         <p class="price-off text-success">1000ريال</p>
                                                     </div>
                                                     <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -1024,23 +1098,27 @@
                                                         <span class="buttoncontent">ذخیره</span>
                                                         <i class="fi fi-rr-bookmark"></i>
                                                     </button>
-                                                    <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                                        <span class="button-content">معرفی</span>
-                                                        <i class="fa fa-question-circle"></i>
-                                                    </button>
+
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                             <div class="card mb-4 box-shadow">
-                                                <a href="#">
-                                                    <img class="img card-img" src="img/stuff/10.jpg" alt="Card image cap" id="pro-img">
-                                                </a>
+                                                <!-- off products -->
+                                                <figure>
+                                                    <a href="#">
+                                                        <img src="img/stuff/10.jpg" class="img img-fluid border-light" title="لورم ایپسوم متن ساختگی " alt="">
+                                                    </a>
+                                                </figure>
+                                                <div class="badge-overlay">
+                                                    <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                                </div>
+                                                <!-- off products -->
                                                 <div class="card-body">
                                                     <p class="product-name">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
                                                     </p>
                                                     <div class="price-container">
-                                                        <p class="price text-danger">1000ريال</p>
+                                                        <p class="price text-muted">1000ريال</p>
                                                         <p class="price-off text-success">1000ريال</p>
                                                     </div>
                                                     <button class="btn btn-outline-success btn-block" title="اضافه به سبد خرید" type="button" style="max-width: 70%;margin: 1vh auto;">
@@ -1051,10 +1129,7 @@
                                                         <span class="buttoncontent">ذخیره</span>
                                                         <i class="fi fi-rr-bookmark"></i>
                                                     </button>
-                                                    <button class="btn btn-outline-info btn-block" title="توضیحات و معرفی محصول" type="button" style="max-width: 70%;margin: 1vh auto;">
-                                                        <span class="button-content">معرفی</span>
-                                                        <i class="fa fa-question-circle"></i>
-                                                    </button>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -1283,7 +1358,7 @@
 
     <!-----------------------scroll up----------------------->
     <a href="#" id="scroll" style="margin: 0 auto;">
-        <i class="fa fa-angle-double-up "></i>
+        <i class="fa fa-angle-double-up fa-2x" style="top: 18%;bottom: 50%;position: relative;right: 6%;"></i>
     </a>
     <!-----------------------scroll up----------------------->
 
