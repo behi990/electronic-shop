@@ -151,21 +151,6 @@
                                         </div>
                                     </li>
 
-                                    <!-- <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a href="#" class="nav-link dropdown-toggle float-right" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ابزارآلات و تجهیزات
-                                            <i class="fi fi-rr-angle-down fa-sm"></i>
-                                        </a>
-                                        <div class="dropdown-menu text-right float-right">
-                                            <a href="#" class="dropdown-item">زیر دسته اول
-                                            </a>
-                                            <a href="#" class="dropdown-item">زیر دسته دوم
-                                            </a>
-                                            <a href="#" class="dropdown-item">زیر دسته سوم
-                                            </a>
-                                            <a href="#" class="dropdown-item">زیر دسته چهارم
-                                            </a>
-                                        </div>
-                                    </li> -->
                                 </ul>
                             </div>
                         </nav>
@@ -192,11 +177,18 @@
     <!-- -------------------------- page main content----------------------------------- -->
     <div class="container-fluid">
         <div class="row">
-            <div id="right_column" class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
+            <div id="right_column" class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3" data-toggle="collapse" data-target="#main_sidebar">
                 <div id="first_block_right" class="block">
-                    <h4>بخش های وب سایت</h4>
+                    <a href="#">
+                        <div class="sidebar_list">
+                            <h4>بخش های وب سایت
+                                <!-- <i class="fi fi-rr-plus float-left"></i> -->
+                            </h4>
+                        </div>
+                    </a>
                     <div class="block_content">
-                        <ul id="main_sidebar">
+                        <!-- toggle list -->
+                        <ul id="main_sidebar" style="position: relative;z-index: 100000;">
                             <li>
                                 <i class="fi fi-rr-home" aria-hidden="true"></i>
                                 <a href="#">صفحه اصلی</a>
@@ -238,9 +230,25 @@
                             </li>
                             <hr>
                             <li>
-                                <i class="fi fi-rr-bookmark" aria-hidden="true"></i>
-                                <a href="#">علاقمندی ها/ذخیره ها</a>
+                                <i class="fi fi-rr-add" aria-hidden="true"></i>
+                                <a href="#">کالاهای جدید</a>
                             </li>
+                            <hr>
+                            <li>
+                                <i class="fi fi-rr-heart" aria-hidden="true"></i>
+                                <a href="#">کالاهای پرطرفدار</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <i class="fa fa-telegram" aria-hidden="true"></i>
+                                <a href="#">کانال تلگرام</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <i class="fi fi-rr-bell-ring" aria-hidden="true"></i>
+                                <a href="#">اخبار و مقالات</a>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -250,19 +258,25 @@
                     <div id="intro_carousel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
-                                <img src="img/large/01.jpg" alt="First slide" class="img-fluid">
+                                <img src="img/large/nice/1.jpg" alt="First slide" class="img-fluid">
                                 <div class="carousel-caption">
                                     <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/large/02.jpg" alt="First slide" class="img-fluid">
+                                <img src="img/large/nice/2.jpg" alt="First slide" class="img-fluid">
                                 <div class="carousel-caption">
                                     <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/large/03.jpg" alt="First slide" class="img-fluid">
+                                <img src="img/large/nice/3.jpg" alt="First slide" class="img-fluid">
+                                <div class="carousel-caption">
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/large/nice/4.jpg" alt="First slide" class="img-fluid">
                                 <div class="carousel-caption">
                                     <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و </p>
                                 </div>

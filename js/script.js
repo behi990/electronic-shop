@@ -144,4 +144,16 @@ $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
 });
 
-// user info
+// sidebar style
+var $active = $('#right_column #main_sidebar').prev().addClass('active');
+$active.find('a').append('<span class="fi fi-rr-minus pull-right"></span>');
+$('#right_column .sidebar_list').not($active).find('a').prepend('<span class="fi fi-rr-plus pull-right"></span>');
+$('#right_column').on('show.bs.collapse', function(e) {
+    console.log('1');
+    $('#right_column .sidebar_list.active').removeClass('active').find('.fi').toggleClass('fi-rr-plus fi-rr-minus');
+    $(e.target).prev().addClass('active').find('.fi').toggleClass('fi-rr-plus fi-rr-minus');
+});
+$('#right_column').on('hide.bs.collapse', function(e) {
+    console.log('2');
+    $(e.target).prev().removeClass('active').find('.fi').removeClass('fi-rr-minus').addClass('fi-rr-plus');
+});
