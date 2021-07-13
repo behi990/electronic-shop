@@ -27,7 +27,6 @@
 
 <body class="hero-anime">
     <header>
-
         <!-- bottom header  -->
         <section class="nav-logo">
             <div class="container-fluid">
@@ -177,79 +176,86 @@
     <!-- -------------------------- page main content----------------------------------- -->
     <div class="container-fluid">
         <div class="row">
-            <div id="right_column" class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3" data-toggle="collapse" data-target="#main_sidebar">
+            <div id="right_column" class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3">
                 <div id="first_block_right" class="block">
-                    <a href="#">
-                        <div class="sidebar_list">
-                            <h4>بخش های وب سایت
-                                <!-- <i class="fi fi-rr-plus float-left"></i> -->
-                            </h4>
-                        </div>
-                    </a>
-                    <div class="block_content">
-                        <!-- toggle list -->
-                        <ul id="main_sidebar" style="position: relative;z-index: 100000;">
-                            <li>
-                                <i class="fi fi-rr-home" aria-hidden="true"></i>
-                                <a href="#">صفحه اصلی</a>
-                            </li>
-                            <hr>
-                            <li>
-                                <i class="fi fi-rr-info" aria-hidden="true"></i>
-                                <a href="#">راهنمای خرید</a>
-                            </li>
-                            <hr>
-                            <li>
-                                <i class="fi fi-rr-box" aria-hidden="true"></i>
-                                <a href="#">پیگیری سفارشات</a>
-                            </li>
-                            <hr>
-                            <li>
-                                <i class="fi fi-rr-diamond" aria-hidden="true"></i>
-                                <a href="#">درباره‌ی ما</a>
-                            </li>
-                            <hr>
-                            <li>
-                                <i class="fi fi-rr-credit-card" aria-hidden="true"></i>
-                                <a href="#">شماره حساب ها</a>
-                            </li>
-                            <hr>
-                            <li>
-                                <i class="fi fi-rr-credit-card" aria-hidden="true"></i>
-                                <a href="#">ثبت اطلاعات پرداختی</a>
-                            </li>
-                            <hr>
-                            <li>
-                                <i class="fi fi-rr-eye" aria-hidden="true"></i>
-                                <a href="#">شرايط و قوانین فروشگاه</a>
-                            </li>
-                            <hr>
-                            <li>
-                                <i class="fi fi-rr-bookmark" aria-hidden="true"></i>
-                                <a href="#">علاقمندی ها/ذخیره ها</a>
-                            </li>
-                            <hr>
-                            <li>
-                                <i class="fi fi-rr-add" aria-hidden="true"></i>
-                                <a href="#">کالاهای جدید</a>
-                            </li>
-                            <hr>
-                            <li>
-                                <i class="fi fi-rr-heart" aria-hidden="true"></i>
-                                <a href="#">کالاهای پرطرفدار</a>
-                            </li>
-                            <hr>
-                            <li>
-                                <i class="fa fa-telegram" aria-hidden="true"></i>
-                                <a href="#">کانال تلگرام</a>
-                            </li>
-                            <hr>
-                            <li>
-                                <i class="fi fi-rr-bell-ring" aria-hidden="true"></i>
-                                <a href="#">اخبار و مقالات</a>
-                            </li>
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="title_block">
+                                    <a class="accordion-toggle " style="z-index: 1;color: #fff;overflow: hidden;background: #0071b8;" data-toggle="collapse" data-parent="#accordion" href="#panel1">بخش های وبسایت</a>
+                                </h4>
+                            </div>
+                            <div id="panel1" class="panel-collapse collapse in collapse">
+                                <div class="panel-body">
+                                    <div class="block_content">
+                                        <!-- toggle list -->
+                                        <ul id="main_sidebar" style="position: relative;z-index: 100000;list-style: none;">
+                                            <li>
+                                                <i class="fi fi-rr-home" aria-hidden="true"></i>
+                                                <a href="#">صفحه اصلی</a>
+                                            </li>
+                                            <hr>
+                                            <li>
+                                                <i class="fi fi-rr-info" aria-hidden="true"></i>
+                                                <a href="#">راهنمای خرید</a>
+                                            </li>
+                                            <hr>
+                                            <li>
+                                                <i class="fi fi-rr-box" aria-hidden="true"></i>
+                                                <a href="#">پیگیری سفارشات</a>
+                                            </li>
+                                            <hr>
+                                            <li>
+                                                <i class="fi fi-rr-diamond" aria-hidden="true"></i>
+                                                <a href="#">درباره‌ی ما</a>
+                                            </li>
+                                            <hr>
+                                            <li>
+                                                <i class="fi fi-rr-credit-card" aria-hidden="true"></i>
+                                                <a href="#">شماره حساب ها</a>
+                                            </li>
+                                            <hr>
+                                            <li>
+                                                <i class="fi fi-rr-credit-card" aria-hidden="true"></i>
+                                                <a href="#">ثبت اطلاعات پرداختی</a>
+                                            </li>
+                                            <hr>
+                                            <li>
+                                                <i class="fi fi-rr-eye" aria-hidden="true"></i>
+                                                <a href="#">شرايط و قوانین فروشگاه</a>
+                                            </li>
+                                            <hr>
+                                            <li>
+                                                <i class="fi fi-rr-bookmark" aria-hidden="true"></i>
+                                                <a href="#">علاقمندی ها/ذخیره ها</a>
+                                            </li>
+                                            <hr>
+                                            <li>
+                                                <i class="fi fi-rr-add" aria-hidden="true"></i>
+                                                <a href="#">کالاهای جدید</a>
+                                            </li>
+                                            <hr>
+                                            <li>
+                                                <i class="fi fi-rr-heart" aria-hidden="true"></i>
+                                                <a href="#">کالاهای پرطرفدار</a>
+                                            </li>
+                                            <hr>
+                                            <li>
+                                                <i class="fa fa-telegram" aria-hidden="true"></i>
+                                                <a href="#">کانال تلگرام</a>
+                                            </li>
+                                            <hr>
+                                            <li>
+                                                <i class="fi fi-rr-bell-ring" aria-hidden="true"></i>
+                                                <a href="#">اخبار و مقالات</a>
+                                            </li>
 
-                        </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -1336,7 +1342,7 @@
                     </a>
                 </section>
                 <section class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3" id="certificates">
-                    <a href="#"> <img src="img/نحوه ارسال/barbari.jpg" alt="" title="سامانه ای-نماد"></a>
+                    <a href="#"> <img src="img/نحوه ارسال/barbari.jpg" style alt="" title="سامانه ای-نماد"></a>
 
                     <a href="#"><img src="img/نحوه ارسال/pishtaz.jpg" alt="" title="سامانه ای-نماد"></a>
                 </section>

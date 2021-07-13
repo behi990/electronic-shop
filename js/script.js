@@ -145,15 +145,15 @@ $(document).ready(function() {
 });
 
 // sidebar style
-var $active = $('#right_column #main_sidebar').prev().addClass('active');
-$active.find('a').append('<span class="fi fi-rr-minus pull-right"></span>');
-$('#right_column .sidebar_list').not($active).find('a').prepend('<span class="fi fi-rr-plus pull-right"></span>');
-$('#right_column').on('show.bs.collapse', function(e) {
-    console.log('1');
-    $('#right_column .sidebar_list.active').removeClass('active').find('.fi').toggleClass('fi-rr-plus fi-rr-minus');
+var $active = $('#accordion .panel-collapse.in').prev().addClass('active');
+$active.find('a').append('<span class="fi fi-rr-plus float-left"></span>');
+$('#accordion .panel-heading').not($active).find('a').prepend('<span class="fi fi-rr-plus float-left"></span>');
+$('#accordion').on('show.bs.collapse', function(e) {
+
+    $('#accordion .panel-heading.active').removeClass('active').find('.fi').toggleClass('fi-rr-plus fi-rr-minus');
     $(e.target).prev().addClass('active').find('.fi').toggleClass('fi-rr-plus fi-rr-minus');
 });
-$('#right_column').on('hide.bs.collapse', function(e) {
-    console.log('2');
+$('#accordion').on('hide.bs.collapse', function(e) {
+
     $(e.target).prev().removeClass('active').find('.fi').removeClass('fi-rr-minus').addClass('fi-rr-plus');
 });
