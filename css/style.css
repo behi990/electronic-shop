@@ -2042,7 +2042,7 @@ textarea {
 }
 
 table#cart * {
-    font-size: 5vh;
+    font-size: 100%;
 }
 
 #steps-header h4 {
