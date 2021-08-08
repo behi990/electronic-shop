@@ -65,46 +65,24 @@ a:focus {
 }
 
 .nav-logo {
-    background-image: url("../img/large/nice/12.jpg");
-    /* height: 100vh; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    max-height: 50vh;
+    background: url(../img/large/nice/10.jpg);
+    margin-bottom: 10vh;
 }
 
 .branding {
-    margin-bottom: 40px;
-    margin-top: 10px;
     opacity: 1 !important;
     display: inline;
     float: right;
 }
 
-.branding>img {
-    max-width: 150px;
-}
-
-.branding a span {
-    border: 1px solid rgb(164, 144, 144);
-    margin: 5px;
-    padding: 5px;
-    display: block;
-    float: right;
-    font-size: 0.75rem;
-    font-weight: 700 !important;
-    box-shadow: 0 4px 4px 0 #c9d4e1;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-}
-
-.branding>a>span:hover {
-    font-weight: 500;
-    background-color: rgb(41, 44, 45);
-    transition: 0.1s all ease-in-out;
-    -webkit-transition: 0.1s all ease-in-out;
-    -moz-transition: 0.1s all ease-in-out;
-    -ms-transition: 0.1s all ease-in-out;
-    -o-transition: 0.1s all ease-in-out;
+.branding img {
+    max-width: 15vw !important;
+    margin: 5vw 1vw;
 }
 
 #header_cart {
@@ -127,9 +105,79 @@ a:focus {
     margin: 0 50px;
 }
 
+
+/*search box design*/
+
+.search {
+    /* border: 1px solid #ddd; */
+    overflow: auto;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.search input[type="text"] {
+    border: 0px;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 5vh;
+}
+
+.search input[type="text"]:focus {
+    outline: 0;
+}
+
+.search-form input[type=text] {
+    font-size: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+    .nav-logo {
+        display: block;
+    }
+}
+
+#main_sidebar li {
+    margin-top: 5vh;
+}
+
+.search input[type="submit"] {
+    border: 0px;
+    background: none;
+    background-color: #0071b8;
+    color: #fff;
+    /*float: right;*/
+    padding: 10px;
+    border-radius-top-right: 5px;
+    -moz-border-radius-top-right: 5px;
+    -webkit-border-radius-top-right: 5px;
+    border-radius-bottom-right: 5px;
+    -moz-border-radius-bottom-right: 5px;
+    -webkit-border-radius-bottom-right: 5px;
+    cursor: pointer;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 780px) {
+    .search {
+        width: 80%;
+        margin: 15vh 0;
+        margin-left: auto;
+    }
+}
+
+
+/*search box design*/
+
 #my-search {
-    margin: 5% auto;
-    width: 70%;
+    margin: 10vh auto;
+    /*width: 70%;*/
     /* margin-left: 20%; */
 }
 
@@ -142,7 +190,7 @@ a:focus {
 #my-search .my-search {
     border-top-right-radius: 5px !important;
     border-bottom-right-radius: 5px !important;
-    font-size: 80%;
+    /*font-size: 1.16rem;*/
 }
 
 .pagination {
@@ -326,6 +374,39 @@ ul.product_list {
     position: relative;
     top: 30px;
 }
+
+
+/* responsive navbar design  */
+
+
+/* Make default navbar links display block at choosen breakpoint and adjust styles to fit... */
+
+@media (max-width: 62em) {
+    .navbar-nav {
+        padding-top: .425rem;
+        padding-left: 0.75rem;
+    }
+    .navbar-nav .nav-item {
+        float: none;
+    }
+    .navbar-brand {
+        float: right;
+    }
+    .navbar-brand,
+    .navbar-nav .nav-item {
+        display: block;
+    }
+    .navbar-nav .nav-item+.nav-item {
+        margin-left: 0;
+    }
+    .dropdown-menu {
+        position: relative;
+        float: none;
+    }
+}
+
+
+/* responsive navbar design  */
 
 #categories_block_top .sf-menu {
     position: relative;
@@ -672,7 +753,7 @@ ul.product_list {
     opacity: 1;
     transform: translateY(0);
     padding: 20px 0;
-    box-shadow: 0 10px 30px 0 #c9d4e1;
+    box-shadow: 0 0px 10px 0 #ddd;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -682,7 +763,7 @@ ul.product_list {
 
 .start-header.scroll-on {
     box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
-    padding: 10px 0;
+    padding: 1px 0;
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -1892,7 +1973,7 @@ textarea {
 }
 
 .actions .btn {
-    width: 36%;
+    width: 100%;
     position: relative;
     /* right: 30%; */
 }
@@ -1906,7 +1987,7 @@ textarea {
         width: 85px;
     }
     table#cart tbody td .form-control {
-        width: 20%;
+        width: 80vw;
         display: inline !important;
     }
     table#cart thead {
@@ -1960,8 +2041,9 @@ textarea {
     }
 }
 
-
-/*  */
+table#cart * {
+    font-size: 5vh;
+}
 
 #steps-header h4 {
     margin: 5vh 0;
@@ -2070,7 +2152,7 @@ div.checker {
 }
 
 #off-cupan {
-    max-width: 50%;
+    max-width: 60%;
     float: right;
 }
 

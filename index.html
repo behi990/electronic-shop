@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <!-- <link rel="stylesheet" href="css/style1.css"> -->
 
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="css/fontawesome-all.css">
@@ -30,144 +31,95 @@
         <!-- bottom header  -->
         <section class="nav-logo">
             <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 text-right float-right branding">
+                <div class="row d-flex align-items-center justify-content-end" style="display: flex !important;flex-direction: row;flex-wrap: nowrap;">
+                    <div class="branding align-self-center">
                         <a href="#" target="_self">
-                            <img src="img/logo/logo.png" alt="logo" class="img img-responsive pull-right img-fluids"><br>
-                            <span class="text-info">فروشگاه قطعات الکترونیکی توان گستر</span>
+                            <img src="img/logo/logo.png" alt="logo" class="img pull-right" style="width: 40vh;height: 4vh;"><br>
                         </a>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 align-items-center input-group" style="max-width: 100% !important;">
-                        <section id="my-search">
-                            <div class="input-group">
-                                <input type="text" class="form-control my-search" placeholder="جستجوی کالای مورد نظرتان در فروشگاه...">
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" style="font-size: 80%;" type="button">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </section>
+
+                    <div class="search pull-right" style="margin-left: auto;width: 70vw;">
+                        <form class="search-form">
+                            <input type="text" placeholder="جستجو در فروشگاه">
+                            <input type="submit" value="جستجو">
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
+
+
         <section class="navigation-wrap bg-light start-header start-style ">
             <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-12">
-                        <nav class="navbar navbar-expand-md navbar-light float-right">
-                            <button class="navbar-toggler" type="button" style="margin-top: 4vh;" data-toggle="collapse" data-target="#navbar-supported-content" aria-controls="navbar-supported-content" aria-expanded="false" aria-label="toggle navigation">
-                                <span class="fi fi-rr-menu-burger fa-2x" ></span>
-                                <span style="font-size: 4vh;"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbar-supported-content">
-                                <ul class="navbar-nav ml-auto py-4 py-md-0">
+                <div class="row ">
+                    <div class="navigation-wrap bg-light start-header start-style">
+                        <div class="container">
 
+                            <nav class="navbar navbar-expand-md navbar-light">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ml-auto py-4 py-md-0">
+                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
+                                            <a class="nav-link" href="#">توان گستر</a>
+                                        </li>
+                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" href="#">خدمات</a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">زیر دسته یک</a>
+                                                <a class="dropdown-item" href="#">زیر دسته دو</a>
+                                                <a class="dropdown-item" href="#">زیر دسته سه</a>
+                                                <a class="dropdown-item" href="#">زیر دسته چهار</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                            <a class="nav-link" href="#">تماس با ما</a>
+                                        </li>
+                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">دسته بندی ها</a>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">زیر دسته یک</a>
+                                                <a class="dropdown-item" href="#">زیر دسته دو</a>
+                                                <a class="dropdown-item" href="#">زیر دسته سه</a>
+                                                <a class="dropdown-item" href="#">زیر دسته چهار</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                            <a class="nav-link" href="#">اخبار و مقالات</a>
+                                        </li>
+                                        <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">محصولات</a>
+                                            <div class="dropdown-menu">
+                                                <a href="#" class="dropdown-item">زیر دسته یک</a>
+                                                <a href="#" class="dropdown-item">زیر دسته دو</a>
+                                                <a href="#" class="dropdown-item">زیر دسته سه</a>
+                                                <a href="#" class="dropdown-item">زیر دسته چهار</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- btn holders -->
+                                <ul class="navbar-nav mr-auto btn_holders" style="display: flex;flex-direction: row;">
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a href="#" class="nav-link dropdown-toggle float-right" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">خانه
-                                            <i class="fi fi-rr-angle-down fa-sm"></i>
-                                        </a>
-                                        <div class="dropdown-menu text-right float-right">
-                                            <a href="#" class="dropdown-item">قوانین فروشگاه
-                                            </a>
-                                            <a href="#" class="dropdown-item">نحوه خرید از سایت
-                                            </a>
-                                            <a href="#" class="dropdown-item">خدمات پس از فروش
-                                            </a>
-                                            <a href="#" class="dropdown-item">پیگیری سفارشات
-                                            </a>
-                                            <a href="#" class="dropdown-item">بن تخفیف
-                                            </a>
-                                            <a href="#" class="dropdown-item">درباره ما
-                                            </a>
-                                        </div>
+                                        <button style="border-radius: 50%;" type="button" class="btn btn-outline-success rounded" id="header_cart" title="??? ????">
+                                            <i class="fi fi-rr-shopping-cart"></i>
+                                        </button>
                                     </li>
-
                                     <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a href="#" class="nav-link dropdown-toggle float-right" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> قطعات و تجهیزات
-                                            الکترونیکی
-                                            <i class="fi fi-rr-angle-down fa-sm"></i>
-                                        </a>
-                                        <div class="dropdown-menu text-right float-right">
-                                            <a href="#" class="dropdown-item">زیر دسته اول
-                                            </a>
-                                            <a href="#" class="dropdown-item">زیر دسته دوم
-                                            </a>
-                                            <a href="#" class="dropdown-item">زیر دسته سوم
-                                            </a>
-                                            <a href="#" class="dropdown-item">زیر دسته چهارم
-                                            </a>
-                                        </div>
+                                        <button type="button" class="btn btn-outline-info rounded" id="header_user" title="???? ??????">
+                                            <i class="fi fi-rr-user"></i>
+                                        </button>
                                     </li>
-
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a href="#" class="nav-link dropdown-toggle float-right" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">سنسورها و ماژول ها
-                                            <i class="fi fi-rr-angle-down fa-sm"></i>
-                                        </a>
-                                        <div class="dropdown-menu text-right float-right">
-                                            <a href="#" class="dropdown-item">زیر دسته اول
-                                            </a>
-                                            <a href="#" class="dropdown-item">زیر دسته دوم
-                                            </a>
-                                            <a href="#" class="dropdown-item">زیر دسته سوم
-                                            </a>
-                                            <a href="#" class="dropdown-item">زیر دسته چهارم
-                                            </a>
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a href="#" class="nav-link dropdown-toggle float-right" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">رباتیک و مکاترونیک
-                                            <i class="fi fi-rr-angle-down fa-sm"></i>
-                                        </a>
-                                        <div class="dropdown-menu text-right float-right">
-                                            <a href="#" class="dropdown-item">زیر دسته اول
-                                            </a>
-                                            <a href="#" class="dropdown-item">زیر دسته دوم
-                                            </a>
-                                            <a href="#" class="dropdown-item">زیر دسته سوم
-                                            </a>
-                                            <a href="#" class="dropdown-item">زیر دسته چهارم
-                                            </a>
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                        <a href="#" class="nav-link dropdown-toggle float-right" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ابزارآلات
-                                            آزمایشگاهی
-                                            <i class="fi fi-rr-angle-down fa-sm"></i>
-                                        </a>
-                                        <div class="dropdown-menu text-right float-right">
-                                            <a href="#" class="dropdown-item">زیر دسته اول
-                                            </a>
-                                            <a href="#" class="dropdown-item">زیر دسته دوم
-                                            </a>
-                                            <a href="#" class="dropdown-item">زیر دسته سوم
-                                            </a>
-                                            <a href="#" class="dropdown-item">زیر دسته چهارم
-                                            </a>
-                                        </div>
-                                    </li>
-
                                 </ul>
-                            </div>
-                        </nav>
-                        <!-- header buttons -->
-                        <ul class="navbar-nav ml-auto py-4 py-md-0 float-left" style="display: flex;flex-direction: row;">
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <button style="border-radius: 50%;" type="button" class="btn btn-outline-success rounded" id="header_cart" title="سبد خرید">
-                                    <i class="fi fi-rr-shopping-cart"></i>
-                                </button>
-                            </li>
-                            <li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-                                <button type="button" class="btn btn-outline-info rounded" id="header_user" title="حساب کاربری">
-                                    <i class="fi fi-rr-user"></i>
-                                </button>
-                            </li>
-                        </ul>
-                        <!-- header buttons -->
+                                <!-- btn holders -->
+                            </nav>
+
+                        </div>
                     </div>
+
+                    <!-- header buttons -->
                 </div>
             </div>
         </section>
@@ -181,11 +133,12 @@
                     <div class="panel-group" id="accordion">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h4 class="title_block">
-                                    <a class="accordion-toggle " style="z-index: 1;color: #fff;overflow: hidden;background: #0071b8;" data-toggle="collapse" data-parent="#accordion" href="#panel1">بخش های وبسایت</a>
+                                <h4 class="title_block mb-0">
+                                    <a class="accordion-toggle " style="z-index: 1;color: #fff;overflow: hidden;background: #0071b8;" data-toggle="collapse" data-parent="#accordion" href="#panel1">بخش های
+                                        وبسایت</a>
                                 </h4>
                             </div>
-                            <div id="panel1" class="panel-collapse collapse in collapse">
+                            <div id="panel1" class="panel-collapse collapse in ">
                                 <div class="panel-body">
                                     <div class="block_content">
                                         <!-- toggle list -->
@@ -320,9 +273,11 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
                                         </div>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -344,9 +299,11 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
                                         </div>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -368,9 +325,11 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
                                         </div>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -392,9 +351,11 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
                                         </div>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -416,9 +377,11 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
                                         </div>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -440,9 +403,11 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
                                         </div>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -464,9 +429,11 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
                                         </div>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -488,9 +455,11 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
                                         </div>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -512,9 +481,11 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
                                         </div>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -536,9 +507,11 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
                                         </div>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -560,9 +533,11 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
                                         </div>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -584,9 +559,11 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
                                         </div>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -620,9 +597,11 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
                                         </div>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -644,9 +623,11 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
                                         </div>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -668,9 +649,11 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
                                         </div>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -692,9 +675,11 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
                                         </div>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -716,9 +701,11 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
                                         </div>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -740,9 +727,11 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
                                         </div>
-                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                        <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -764,8 +753,10 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
-                                        </div> <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
+                                        </div> <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -787,8 +778,10 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
-                                        </div> <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
+                                        </div> <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -810,8 +803,10 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
-                                        </div> <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
+                                        </div> <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -833,8 +828,10 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
-                                        </div> <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
+                                        </div> <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -856,8 +853,10 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
-                                        </div> <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
+                                        </div> <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
@@ -879,8 +878,10 @@
                                             </a>
                                         </figure>
                                         <div class="badge-overlay">
-                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50% تخفیف</span>
-                                        </div> <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید </span></a>
+                                            <span class="top-left badge red" style="font-family: 'shabnam-400';">50%
+                                                تخفیف</span>
+                                        </div> <a href="#"><span class="product-name">لورم ایپسوم متن ساختگی با تولید
+                                            </span></a>
                                         <div class="price-container">
                                             <p class="price text-muted">1000ريال</p>
                                             <p class="price-off text-success">1000ريال</p>
